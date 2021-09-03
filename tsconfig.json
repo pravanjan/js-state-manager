@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "target": "esnext",
+      "module": "esnext",
+      "removeComments": false,
+      "moduleResolution": "node",
+      "skipLibCheck": true
+    },
+    "include": [
+      "src/**/*.ts",
+    ],
+    "exclude": [
+      "node_modules"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ]
+  }
