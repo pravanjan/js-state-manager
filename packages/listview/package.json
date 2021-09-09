@@ -1,0 +1,16 @@
+{
+  "name": "listview",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "build": "npm run test-d && webpack",
+    "test-d": "tcm public",
+
+    "dev": "webpack serve"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

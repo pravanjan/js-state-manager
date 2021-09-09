@@ -5,7 +5,7 @@ module.exports = {
   mode: "development",
 
   entry: {
-    main: ["./src/component/index.ts"],
+    main: ["./src/store/store.ts"],
   },
   output: {
     path: path.resolve(__dirname, "dist"),
