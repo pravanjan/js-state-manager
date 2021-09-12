@@ -14,6 +14,14 @@ export const defaultHandle =(context:StoreType)=>{
                 processCallBack(context, state);
                 return  true;
             }
+         },
+         deleteProperty (state, prop){
+             if(prop in state){
+                 delete state[prop];
+                 processCallBack(context, state);
+                 return true;
+             }
+
          }
     };
 }

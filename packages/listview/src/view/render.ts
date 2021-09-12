@@ -1,21 +1,49 @@
 import userview from "./atoms/userview";
 import { default as Button } from "../view/atoms/button";
+import { AddNew, deleteUser } from "../useractions";
+
+const container = document.querySelector(".listcontainer");
+const buttonHolder = document.querySelector(".buttonHolder");
+
+
+
+export  const AddButton  = (data, action)=>{
+  let button = Button(data, action);
+  console.log("The button ", button)
+  return button;
+}
+
+
+const Addbutton  = {
+  name:"Add new"
+}
+
+
+const deleteButton  = {
+  name:"Delete"
+}
 
 
 
 export const render =(dataArray:any[])=>{
-    document.querySelector("body").innerHTML = "";
+    document.querySelector(".listcontainer").innerHTML = "";
     let parentDiv = document.createElement("div");
     parentDiv.className ="container bootstrap snippets bootdey";
     dataArray.forEach(el => {
         let child = userview(el);
         child!=null? parentDiv.appendChild(child):null
     });
-    document.querySelector("body").appendChild(parentDiv);
-  
+    container.appendChild(parentDiv);
+    AddingButton();
   }
 
-export  const AddButton  = (data, callback)=>{
-    let button = Button(data,callback);
-}
-
+  const AddingButton=()=>{
+    if(!document.querySelector(".btn.btn-primary")){
+      buttonHolder.appendChild(AddButton(Addbutton, AddNew));
+      buttonHolder.appendChild(AddButton(deleteButton, deleteUser));
+    
+    }
+   
+  
+  }
+ 

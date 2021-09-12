@@ -4,8 +4,10 @@ const { Template } = require("webpack");
 
 module.exports = {
   mode: "development",
+  devtool:"inline-source-map",
+  
   entry: {
-    main: ["./src/app.ts"],
+    main: ["./src/users.ts"],
   },
   resolve: {
     extensions: ['.ts', '.js'],
