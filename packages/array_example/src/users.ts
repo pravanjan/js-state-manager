@@ -13,8 +13,7 @@ const init =async()=>{
     let param = {
         name:"peoplestore",
         state:response.results,
-        
-    }
+     }
     let userstore = storeManager.createStore(param);
     console.log(storeManager.getStore("peoplestore"))
 

@@ -1,6 +1,6 @@
 import userview from "./atoms/userview";
-import { default as Button } from "../view/atoms/button";
-import { AddNew, deleteUser } from "../useractions";
+import { default as Button } from "./atoms/button";
+import { AddNew, deleteUser, updateUser } from "../useractions";
 
 const container = document.querySelector(".listcontainer");
 const buttonHolder = document.querySelector(".buttonHolder");
@@ -23,6 +23,11 @@ const deleteButton  = {
   name:"Delete"
 }
 
+const updateButton  = {
+  name:"update"
+}
+
+
 
 
 export const render =(dataArray:any[])=>{
@@ -41,6 +46,8 @@ export const render =(dataArray:any[])=>{
     if(!document.querySelector(".btn.btn-primary")){
       buttonHolder.appendChild(AddButton(Addbutton, AddNew));
       buttonHolder.appendChild(AddButton(deleteButton, deleteUser));
+      buttonHolder.appendChild(AddButton(updateButton, updateUser));
+
     
     }
    

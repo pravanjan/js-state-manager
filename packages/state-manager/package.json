@@ -1,7 +1,7 @@
 {
   "name": "state",
   "version": "1.0.0",
-  "main": "src/store/store.ts",
+  "main": "src/storemanager.ts",
   "scripts": {
     "start": "webpack serve",
     "build": "webpack",
