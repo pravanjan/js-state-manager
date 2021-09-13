@@ -4,15 +4,11 @@
 Javascript State Manager
 
 <!-- Add buttons here -->
- A Simple State manager writtern in Typescript. This would library is more appropriate to use in small er micro forntend project.  
+ A Simple State manager writtern in Typescript. This  library is more appropriate to use in a small er micro forntend project.  
  
 <!-- Describe your project in brief -->
   This is  a project i have intially created to know how to build a small state mangement application by following functionality of  Redux libray. This has a very minimlal operation and does helps when we are building small  webcomponent with micro forntend architucture.  
 
-
-
-
-I use [**Shields IO**](https://shields.io/) for making badges. It is a simple and easy to use tool that you can use for almost all your badge cravings. -->
 
 
 
@@ -23,6 +19,7 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 This has two demo project inside the same package one with Object with Array type and other with simple object type. 
 https://github.com/pravanjan/state-manager-javascript/tree/master/packages/demo_withArray
+
 https://github.com/pravanjan/state-manager-javascript/tree/master/packages/demo_withObject
 
 Here is a random GIF as a placeholder.
@@ -60,7 +57,6 @@ Following this steps, **they should be able to run this in their device.**
 
 A method I use is after completing the README, I go through the instructions from scratch and check if it is working. -->
 
-<!-- Here is a sample instruction:
 
  ``` npm install ```
  ``` npm run build:state ```
