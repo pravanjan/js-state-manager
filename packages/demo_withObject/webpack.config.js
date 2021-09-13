@@ -39,19 +39,6 @@ module.exports = {
   })],
 
 
-  resolve: {
-    // Add ".ts" and ".tsx" as resolvable extensions.
-    extensions: [".ts", ".js"],
-  },
-  // watch: true,
-  module: {
-    rules: [
-      
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.ts?$/, loader: "ts-loader" },
-      
-    ],
-  },
   devServer: {
     contentBase: path.join(__dirname, "./dist"),
     compress: true,

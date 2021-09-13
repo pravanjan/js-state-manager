@@ -36,26 +36,6 @@ module.exports = {
     template:"public/index.html"
   })],
 
-
-  resolve: {
-    // Add ".ts" and ".tsx" as resolvable extensions.
-    extensions: [".ts", ".js"],
-  },
-  // watch: true,
-  module: {
-    rules: [
-      {
-        enforce: "pre",
-        test: /\.css$/,
-        exclude: /node_modules/,
-        loader: "css-loader",
-      },
-      
-      // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
-      { test: /\.ts?$/, loader: "ts-loader" },
-      
-    ],
-  },
   devServer: {
     contentBase: path.join(__dirname, "./dist"),
     compress: true,
