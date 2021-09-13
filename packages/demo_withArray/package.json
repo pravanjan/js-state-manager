@@ -1,12 +1,11 @@
 {
-  "name": "array_example",
+  "name": "demo_withArray",
   "version": "1.0.0",
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
     "build": "npm run test-d && webpack",
     "test-d": "tcm public",
-
     "dev": "webpack serve"
 
   },

@@ -21,7 +21,9 @@ I use [**Shields IO**](https://shields.io/) for making badges. It is a simple an
 
 <!-- Add a demo for your project -->
 
-<!-- After you have written about your project, it is a good idea to have a demo/preview(**video/gif/screenshots** are good options) of your project so that people can know what to expect in your project. You could also add the demo in the previous section with the product description.
+This has two demo project inside the same package one with Object with Array type and other with simple object type. 
+https://github.com/pravanjan/state-manager-javascript/tree/master/packages/demo_withArray
+https://github.com/pravanjan/state-manager-javascript/tree/master/packages/demo_withObject
 
 Here is a random GIF as a placeholder.
 
@@ -60,11 +62,15 @@ A method I use is after completing the README, I go through the instructions fro
 
 <!-- Here is a sample instruction:
 
-To use this project, first clone the repo on your device using the command below:
+ ``` npm install ```
+ ``` npm run build:state ```
 
-```git init```
+ to test the project is working 
+  ``` npm run build:array ```// for array type example 
+  ``` npm run start:array ```// for array type example 
 
-```git clone https://github.com/navendu-pottekkat/nsfw-filter.git``` -->
+
+
 
 # Usage
 [(Back to top)](#table-of-contents)
