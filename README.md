@@ -1,16 +1,10 @@
-<<<<<<< HEAD
-# state-manager-javascript
-
- This is simple javascript libray to maanger your state  written in Typescript for  javascript user. 
-=======
 <!-- Add banner here -->
 
 # Project Title -
 Javascript State Manager
 
 <!-- Add buttons here -->
- A Simple State manager writtern in Typescript. 
->>>>>>> bfca35fd9f7e1667e13c8c10bc7f0f3bc66cf236
+ A Simple State manager writtern in Typescript. This would library is more appropriate to use in small er micro forntend project.  
  
 <!-- Describe your project in brief -->
   This is  a project i have intially created to know how to build a small state mangement application by following functionality of  Redux libray. This has a very minimlal operation and does helps when we are building small  webcomponent with micro forntend architucture.  
@@ -20,13 +14,7 @@ Javascript State Manager
 
 I use [**Shields IO**](https://shields.io/) for making badges. It is a simple and easy to use tool that you can use for almost all your badge cravings. -->
 
-<!-- Some badges that you could use -->
 
-<!-- ![GitHub release (latest by date including pre-releases)](https://img.shields.io/github/v/release/navendu-pottekkat/awesome-readme?include_prereleases)
-: This badge shows the version of the current release.
-
-![GitHub last commit](https://img.shields.io/github/last-commit/navendu-pottekkat/awesome-readme)
-: I think it is self-explanatory. This gives people an idea about how the project is being maintained.
 
 
 # Demo-Preview

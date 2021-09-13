@@ -1,15 +1,21 @@
 
 const apiUrl = "https://randomuser.me/api/?results=1";
 
+
+/*This action add new object to our state array. Every time we call this action it automatically 
+call the subscribe render method.
+*/
 export const AddNew = (state , payload)=>{
-    console.log("Add Action  ")
-  
-    state.push(payload) ;
+    console.log("Add Action");
+    state.push(payload);
     return  state;
   }
 
 
 
+
+/*This action delete object from our state array. Every time we call this action it automatically 
+call the subscribe render method. */
 
 export const deleteUser = (state , payload)=>{
     console.log("Delete Action")
@@ -21,6 +27,11 @@ export const deleteUser = (state , payload)=>{
     }    
     return  state;
   }
+
+
+
+/*This action update object from our state array. Every time we call this action it automatically 
+call the subscribe render method. */
 
 export const updateUser = (state, payload)=>{
     console.log("Update Action")
