@@ -16,20 +16,12 @@ module.exports = {
 
     rules: [
 
-    {
-      test: /\.css$/,
-      include: path.join(__dirname, 'src/view/css'),
-      use: [
-        'style-loader',
-        {
-          loader: 'typings-for-css-modules-loader',
-          options: {
-            modules: true,
-            namedExport: true
-          }
-        }
-      ]
-    },
+      {
+        enforce: "pre",
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: "css-loader",
+      },
     { test: /\.ts?$/, loader: "ts-loader" },
    ],
   },
