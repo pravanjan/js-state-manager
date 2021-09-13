@@ -56,12 +56,12 @@ Following this steps, **they should be able to run this in their device.**
 A method I use is after completing the README, I go through the instructions from scratch and check if it is working. -->
 
 
-     ``` npm install ```
-     ``` npm run build:state ```
+       npm install 
+       npm run build:state 
 
- to test the project is working 
-     ``` npm run build:array ```// for array type example 
-     ``` npm run start:array ```// for array type example 
+      test the project is working 
+       npm run build:array // for array type example 
+       npm run start:array // for array type example 
 
 
 
