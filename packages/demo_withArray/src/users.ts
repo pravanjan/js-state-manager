@@ -1,6 +1,7 @@
 import {GET} from "./server"
 import store from "state/src/storemanager"
 import {render} from "./view/render"
+import styles  from "./view/css/app.css";
 
 const storeManager = store.getInstance();
 

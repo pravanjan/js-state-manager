@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "npm run test-d && webpack",
-    "test-d": "tcm public",
+    "test-d": "tcm src",
     "dev": "webpack serve"
 
   },

@@ -11,8 +11,6 @@
     "build:object": "npm run build -w=demo_withObject",
     "start:array": "npm run dev -w=demo_withArray",
     "start:object": "npm run dev -w=demo_withObject"
-
-
   },
   "keywords": [],
   "author": "",
@@ -27,8 +25,8 @@
     "style-loader": "^3.2.1",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.5",
+    "typed-css-modules": "^0.7.0",
     "typescript": "^4.3.5",
-    "typings-for-css-modules-loader": "^1.7.0",
     "webpack": "^5.48.0",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"

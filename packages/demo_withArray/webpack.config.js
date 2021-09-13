@@ -15,17 +15,23 @@ module.exports = {
   module: {
 
     rules: [
-   
-     {
-      enforce: "pre",
+
+    {
       test: /\.css$/,
-      exclude: /node_modules/,
-      loader: "css-loader",
+      include: path.join(__dirname, 'src/view/css'),
+      use: [
+        'style-loader',
+        {
+          loader: 'typings-for-css-modules-loader',
+          options: {
+            modules: true,
+            namedExport: true
+          }
+        }
+      ]
     },
     { test: /\.ts?$/, loader: "ts-loader" },
-
-
-    ],
+   ],
   },
 
   output: {
@@ -46,6 +52,12 @@ module.exports = {
   // watch: true,
   module: {
     rules: [
+      {
+        enforce: "pre",
+        test: /\.css$/,
+        exclude: /node_modules/,
+        loader: "css-loader",
+      },
       
       // all files with a `.ts` or `.tsx` extension will be handled by `ts-loader`
       { test: /\.ts?$/, loader: "ts-loader" },
