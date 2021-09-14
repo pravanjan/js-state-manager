@@ -6,7 +6,7 @@
   "version": "1.0.0",
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
   "scripts": {
-    "build": "npm run build -w=state",
+    "build": "npm run build -w=js-state",
     "build:array": "npm run build -w=demo_withArray",
     "build:object": "npm run build -w=demo_withObject",
     "start:array": "npm run dev -w=demo_withArray",
