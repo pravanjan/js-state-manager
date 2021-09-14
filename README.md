@@ -57,11 +57,16 @@ A method I use is after completing the README, I go through the instructions fro
 
 
        npm install 
-       npm run build:state 
+       npm run build 
 
-      test the project is working 
+      test the project is working for an array example 
        npm run build:array // for array type example 
        npm run start:array // for array type example 
+
+      test the project is working for an array example 
+       npm run build:object // for array type example 
+       npm run start:object // for array type example 
+
 
 
 
