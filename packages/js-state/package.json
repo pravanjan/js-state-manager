@@ -1,14 +1,16 @@
 {
-  "name": "state",
+  "name": "js-state",
   "version": "1.0.0",
-  "main": "src/storemanager.ts",
+  "main": "lib/storemanager.js",
   "scripts": {
-    "start": "webpack serve",
-    "build": "webpack",
+    "build": "tsc",
     "test": "jest"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pravanjan",
+  "files": [
+    "dist/*"
+  ],
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.1",

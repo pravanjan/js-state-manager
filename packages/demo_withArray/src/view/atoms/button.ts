@@ -1,5 +1,4 @@
-import {default as storeManager } from "state/src/storemanager";
-import {AddNew} from "../../useractions"
+import { StoreManager } from "js-state";
 import dataJson from "../../utils.json"
 
 const buttonTemplate = (data:any):HTMLTemplateElement=> {
@@ -13,7 +12,7 @@ const buttonTemplate = (data:any):HTMLTemplateElement=> {
 }
 
 export default (data:any, actions)=>{
-   let userStore = storeManager.getInstance().getStore("peoplestore");
+   let userStore = StoreManager.getInstance().getStore("peoplestore");
    let buttonTemp:HTMLTemplateElement = buttonTemplate(data);
    let button =  buttonTemp.content.firstElementChild.cloneNode(true);
    

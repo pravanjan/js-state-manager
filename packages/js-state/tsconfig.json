@@ -1,9 +1,11 @@
 {
     "compilerOptions": {
       "sourceMap": true,
-      "target": "esnext",
-      "module": "esnext",
+      "target": "es5",
+      "module": "commonjs",
       "removeComments": false,
+      "declaration": true,
+      "outDir": "./lib",
       "moduleResolution": "node",
       "skipLibCheck": true
     },
@@ -11,7 +13,8 @@
       "src/**/*.ts",
     ],
     "exclude": [
-      "node_modules"
+      "node_modules",  "**/__test__/*"
+
     ],
     "typeRoots": [
       "node_modules/@types"

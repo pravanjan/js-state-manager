@@ -2,7 +2,7 @@ import {default as Store} from "./store/store";
 
 import { StoreType } from "./store/types";
 
-export default class StoreManager{
+export  class StoreManager{
     private  static  _instance:StoreManager; 
     private storeMap:Map<string,Store>
     constructor(storeMap:Map<string,Store>){

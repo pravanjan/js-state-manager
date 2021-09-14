@@ -1,9 +1,10 @@
 import {GET} from "./server"
-import store from "state/src/storemanager"
+import  {StoreManager } from "js-state"
 import {render} from "./view/render"
-import styles  from "./view/css/app.css";
 
-const storeManager = store.getInstance();
+console.log(StoreManager)
+
+const storeManager = StoreManager.getInstance();
 
 const apiUrl = "https://randomuser.me/api/?results=2";
 
