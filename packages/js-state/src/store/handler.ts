@@ -1,9 +1,9 @@
 import {processCallBack} from "./callbackHandler"
-import { StoreType } from "./types";
-export const defaultHandle =(context:StoreType)=>{
+import  Store  from "./store";
+export const defaultHandle =(context:Store)=>{
     return {
         set:(state ,key ,value)=>{
-            console.log(key, "key and value ", value);
+            
             if(Array.isArray(state) && key ==="length"){
                 state[key] = value;
                 return  true;

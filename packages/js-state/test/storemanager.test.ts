@@ -1,5 +1,5 @@
 import { StoreType } from "../src/store/types"
-import {default as StoreManager} from "../src/storemanager"
+import {StoreManager} from "../src/storemanager"
 
 const storeObj :StoreType={
     name:"mynew store",
@@ -11,8 +11,4 @@ let  manager = StoreManager.getInstance();
  test("creating instance of store manager ",()=>{
     let store = manager.createStore(storeObj);
     expect(manager.getStore("mynew store").name).toBe(storeObj.name);
-
-    let  manager2 = StoreManager.getInstance();
-
-
 })
