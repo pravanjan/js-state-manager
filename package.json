@@ -7,37 +7,27 @@
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
   "scripts": {
     "build": "npm run build -w=js-state",
-    "build:array": "npm run build -w=demo_withArray",
-    "build:object": "npm run build -w=demo_withObject",
-    "start:array": "npm run dev -w=demo_withArray",
-    "start:object": "npm run dev -w=demo_withObject"
+    "test":"npm test -w=js-state"
+   
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.1",
-    "css-loader": "^6.2.0",
-    "html-webpack-plugin": "^5.3.2",
     "jest": "^27.0.6",
     "raw-loader": "^4.0.2",
-    "react": "^17.0.2",
-    "style-loader": "^3.2.1",
     "ts-jest": "^27.0.5",
     "ts-loader": "^9.2.5",
-    "typed-css-modules": "^0.7.0",
-    "typescript": "^4.3.5",
-    "webpack": "^5.48.0",
-    "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "typescript": "^4.3.5"
   },
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pravanjan/state-manager-javascript.git"
+    "url": "git+https://github.com/pravanjan/js-state.git"
   },
   "bugs": {
-    "url": "https://github.com/pravanjan/state-manager-javascript/issues"
+    "url": "https://github.com/pravanjan/js-state/issues"
   },
-  "homepage": "https://github.com/pravanjan/state-manager-javascript#readme"
+  "homepage": "https://github.com/pravanjan/js-state#readme"
 }
