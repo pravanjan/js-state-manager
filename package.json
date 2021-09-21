@@ -1,17 +1,14 @@
 {
-  "name": "state-manager-javascript",
-  "workspaces": [
-    "packages/*"
-  ],
+  "name": "js-state-manager",
   "version": "1.0.0",
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
+
   "scripts": {
-    "build": "npm run build -w=js-state",
-    "test":"npm test -w=js-state"
-   
+    "build": "tsc",
+    "test":"npm test"
   },
   "keywords": [],
-  "author": "",
+  "author": "Pravanjan",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^27.0.1",
@@ -21,7 +18,10 @@
     "ts-loader": "^9.2.5",
     "typescript": "^4.3.5"
   },
-  "main": "index.js",
+  "main": "lib/storemanager.js",
+  "types": "lib/storemanager.d.ts",
+
+  "files": ["lib/**/*"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pravanjan/js-state.git"
