@@ -1,6 +1,6 @@
 {
-  "name": "js-state-manager",
-  "version": "1.0.0",
+  "name": "javascript-state",
+  "version": "1.0.1",
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
 
   "scripts": {
@@ -24,10 +24,10 @@
   "files": ["lib/**/*"],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pravanjan/js-state.git"
+    "url": "git+https://github.com/pravanjan/js-state-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/pravanjan/js-state/issues"
+    "url": "https://github.com/pravanjan/js-state-manager/issues"
   },
-  "homepage": "https://github.com/pravanjan/js-state#readme"
+  "homepage": "https://github.com/pravanjan/js-state-manager#readme"
 }
