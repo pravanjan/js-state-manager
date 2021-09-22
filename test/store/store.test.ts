@@ -1,5 +1,5 @@
-import {default as Store} from "../src/store/store"
-import {callbcakType, actionCallbackType, StoreType} from "../src/store/types"
+import {default as Store} from "../../src/store/store"
+import {callbcakType, actionCallbackType, StoreType} from "../../src/store/types"
 
 
 
@@ -14,20 +14,21 @@ const action1:actionCallbackType = (state, payload)=>{
    state.push(payload)
   return state;
 }
-var callback:callbcakType = (state)=>{
-  console.log("inside callback",state);
-}
+
+const mockedcallback = jest.fn(()=>{
+  console.log("calling the callback");
+})
 
 const action2:actionCallbackType = (state, payload)=>{
   state = payload;
   return state;
 }
 
-test("check to validate the state object as array type",()=>{    
+test("Store dispatch action called the subscribed function",()=>{    
     let mystore = new Store(storeObj);
-    mystore.subscribe(callback);
+    mystore.subscribe(mockedcallback);
     mystore.dispatch(action1,{hello:"me"})
-    //expect(mystore.dispatch(action1,{hello:"me"})[0].hello).toBe(storeObj.state[0].hello);
+    expect(mockedcallback.mock.calls.length).toBe(1);
 })
 
 // test("check to validate the state object empty payload",()=>{    
