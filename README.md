@@ -1,22 +1,24 @@
 <!-- Add banner here -->
 
-# Project Title -
-
-Javascript State Manager
+# Project Title - js-state-manager
 
 <!-- Add buttons here -->
 
-A Simple Javascript State manager Library writtern in Typescript. This library is more appropriate to use in a smaller micro forntend project.
+A tiny Javascript State manager Library writtern using Typescript. This library is more appropriate to use in a smaller micro forntend project.
 
 <!-- Describe your project in brief -->
 
-This is a project i have intially created to know how to build a small state mangement application by following functionality of Redux libray. This has a very minimlal operation and does helps when we are building small webcomponent with micro forntend architucture.
+This is a project i have intially created to know how to build a small state mangement application. This has a very minimlal operation and does helps when we are building and sharing micro forntend architucture.
 
 # Demo-Preview
 
+![Random GIF](https://media.giphy.com/media/h4UAFDwzqnXKKB3q6m/giphy.gif?cid=790b761146296d2ea2ef610b3f168a0ad15884ba42b9637e&rid=giphy.gif&ct=g)
+<!-- https://media.giphy.com/media/h4UAFDwzqnXKKB3q6m/giphy.gif?cid=790b761146296d2ea2ef610b3f168a0ad15884ba42b9637e&rid=giphy.gif&ct=g -->
 <!-- Add a demo for your project -->
 
-This has two demo project inside the same package one with Object with Array type and other with simple object type.
+The about gif is from the the demo project build using this package  package one with Array type and other with simple object type.
+checkout this example project for more information on how it works
+
 https://github.com/pravanjan/js-state-example
 
 # Table of contents
@@ -54,14 +56,14 @@ A method I use is after completing the README, I go through the instructions fro
        npm i js-state-manager
        npm i -D js-state-manager  //for dev dependency
 
-https://media.giphy.com/media/h4UAFDwzqnXKKB3q6m/giphy.gif?cid=790b761146296d2ea2ef610b3f168a0ad15884ba42b9637e&rid=giphy.gif&ct=g
+
 
 # Usage
 
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
 Step 1 :
-/_ import StoreManager from the library _/
+import StoreManager from the library 
 
         import  {StoreManager } from "js-state-manager"
 
@@ -79,16 +81,16 @@ Step 1 :
     userStore.subscribe(your function);
 
 Step 2:
-/_Then define your action for state array. Every time we call this action it automatically call the subscribe render method.
-_/
-const AddNew = (state , payload)=>{
-console.log("Add Action");
-state.push(payload);
-return state;
-}
-//call and dispatch the action when your user clicked add user button.
+Then define your action for state array. Every time we call this action it automatically call the subscribe render method.
+        
+        const AddNew = (state , payload)=>{
+                       state.push(payload);
+                       return state;
+                    }
+call and dispatch the action when your user clicked add user button.
 
-    userStore.dispatch(AddNew,{user object goes here});
+       userStore.dispatch(AddNew,{user object goes here});
+          
 
 [(Back to top)](#table-of-contents)
 
