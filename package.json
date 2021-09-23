@@ -1,6 +1,6 @@
 {
-  "name": "javascript-state",
-  "version": "1.0.1",
+  "name": "js-state-manager",
+  "version": "1.0.2",
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
 
   "scripts": {
