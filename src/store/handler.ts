@@ -6,8 +6,9 @@ export const defaultHandle =(context:Store)=>{
             if(key ==="splice"){
                 const origMethod = state[key];
                 return function(...args){
-                    processCallBack(context, state);
                     origMethod.apply(state, args);
+                    processCallBack(context, state);
+
                 }
             }
             return state[key];

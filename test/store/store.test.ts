@@ -6,7 +6,7 @@ import {callbcakType, actionCallbackType, StoreType} from "../../src/store/types
 
 const arrayType :StoreType={
     name:"mynew store",
-    state:[{name:"kevin"},{name:"Bob"}],
+    state:[{name:"kevin"},{name:"Bob"}, {name:"pravanjan"}],
 
 }
 
@@ -104,11 +104,11 @@ const actionObjectDeleteType:actionCallbackType = (state, payload)=>{
 
 test("validate delete operation on   arrayType",()=>{    
   const mockedcallback1 = jest.fn(()=>{
-    console.log("calling the callback");
+    console.log("delete the callback");
   })
   let mystore = new Store(arrayType);
   mystore.subscribe(mockedcallback1);
-  mystore.dispatch(actionArrayDeleteType,{name:"kevin"})
+  mystore.dispatch(actionArrayDeleteType,{name:"Bob"})
   expect(mockedcallback1.mock.calls.length).toBe(1);
 })
 
