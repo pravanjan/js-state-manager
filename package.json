@@ -1,14 +1,15 @@
 {
   "name": "js-state-manager",
-  "version": "1.0.6",
+  "version": "1.0.8",
   "description": "This is simple javascript libray to maanger your state  written in Typescript for  javascript user.",
 
   "scripts": {
     "build": "tsc",
     "test":"jest --coverage"
   },
-  "keywords": [],
+  "keywords": ["javascript", "state", "js","state", "state manager"],
   "author": "Pravanjan",
+
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^27.0.1",

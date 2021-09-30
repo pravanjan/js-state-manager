@@ -1,6 +1,6 @@
 <!-- Add banner here -->
 
-# Project Title - js-state-manager
+# js-state-manager
 
 <!-- Add buttons here -->
 
@@ -90,7 +90,6 @@ Then define your action for state array. Every time we call this action it autom
 call and dispatch the action when your user clicked add user button.
 
        userStore.dispatch(AddNew,{user object goes here});
-
 
 [(Back to top)](#table-of-contents)
 
