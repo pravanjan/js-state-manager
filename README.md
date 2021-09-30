@@ -13,10 +13,11 @@ This is a project i have intially created to know how to build a small state man
 # Demo-Preview
 
 ![Random GIF](https://media.giphy.com/media/h4UAFDwzqnXKKB3q6m/giphy.gif?cid=790b761146296d2ea2ef610b3f168a0ad15884ba42b9637e&rid=giphy.gif&ct=g)
+
 <!-- https://media.giphy.com/media/h4UAFDwzqnXKKB3q6m/giphy.gif?cid=790b761146296d2ea2ef610b3f168a0ad15884ba42b9637e&rid=giphy.gif&ct=g -->
 <!-- Add a demo for your project -->
 
-The about gif is from the the demo project build using this package  package one with Array type and other with simple object type.
+The about gif is from the the demo project build using this package package one with Array type and other with simple object type.
 checkout this example project for more information on how it works
 
 https://github.com/pravanjan/js-state-example
@@ -56,14 +57,12 @@ A method I use is after completing the README, I go through the instructions fro
        npm i js-state-manager
        npm i -D js-state-manager  //for dev dependency
 
-
-
 # Usage
 
 <!-- This is optional and it is used to give the user info on how to use the project after installation. This could be added in the Installation section also. -->
 
 Step 1 :
-import StoreManager from the library 
+import StoreManager from the library
 
         import  {StoreManager } from "js-state-manager"
 
@@ -82,15 +81,16 @@ import StoreManager from the library
 
 Step 2:
 Then define your action for state array. Every time we call this action it automatically call the subscribe render method.
-        
+
         const AddNew = (state , payload)=>{
                        state.push(payload);
                        return state;
                     }
+
 call and dispatch the action when your user clicked add user button.
 
        userStore.dispatch(AddNew,{user object goes here});
-          
+
 
 [(Back to top)](#table-of-contents)
 
@@ -139,14 +139,6 @@ You could also add contact details for people to get in touch with you regarding
 # License
 
 [(Back to top)](#table-of-contents)
-
-<!-- Adding the license to README is a good practice so that people can easily refer to it.
-
-Make sure you have added a LICENSE file in your project folder. **Shortcut:** Click add new file in your root of your repo in GitHub > Set file name to LICENSE > GitHub shows LICENSE templates > Choose the one that best suits your project!
-
-I personally add the name of the license and provide a link to it like below. -->
-
-[GNU General Public License version 3](https://opensource.org/licenses/GPL-3.0)
 
 # Footer
 

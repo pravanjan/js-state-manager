@@ -1,8 +1,8 @@
 {
     "compilerOptions": {
       "sourceMap": true,
-      "target": "es5",
-      "module": "es6",
+      "target": "esnext",
+      "module": "esnext",
       "removeComments": false,
       "declaration": true,
       "outDir": "./lib",
