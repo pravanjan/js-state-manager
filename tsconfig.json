@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
       "sourceMap": true,
-      "target": "esnext",
+      "target": "es5",
       "module": "esnext",
       "removeComments": false,
       "declaration": true,
