@@ -19,9 +19,11 @@ export default class StateStore{
         this.state = actionCallback(this.state, payload);
         return this.state;
     }
-    subscribe(fnparam:callbcakType){
-        this.callbacks.push(fnparam);
+
+    subscribe(fnparam, ...args){
+        this.callbacks.push({callbacks:fnparam,args:args});
     }
+   
    
 
 }

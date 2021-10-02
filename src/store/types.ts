@@ -10,7 +10,10 @@ export interface StoreType {
 /* Type declar callback function it take one input parameter that is state
  and does not return any value
 */
-export type callbcakType = ((state:any)=> void);
+export type callbcakType ={
+    callbacks: ((...param:any)=> void),
+    args?:any
+} ;
 
 /* Type declar actioncallbackType  function it take one input parameter   state
  and payload what supopose to change inside the state and reurn an changed object
